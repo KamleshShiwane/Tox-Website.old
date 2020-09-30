@@ -15,6 +15,7 @@ except ImportError:
 
 def do_tlc(name, lang):
     name = name[:name.rfind(".mustache")]
+    name = name[:name.rfind(".mustache")]
     print("Beginning TLC on {0}.".format(name))
     print("Using {0}.{1}.json as a base.".format(name, lang))
     with open("{0}.{1}.json".format(name, lang), "r") as master:
